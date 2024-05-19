@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.GEPabloSanz.edicion">
+   <children>
+      <VBox layoutX="14.0" layoutY="44.0" prefHeight="202.0" prefWidth="406.0">
+         <children>
+            <HBox prefHeight="16.0" prefWidth="406.0">
+               <children>
+                  <Label fx:id="lblIdTrabajador">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label text="NOMBRE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtFldNombre" />
+            <Label text="PUESTO">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtFldPuesto" />
+            <Label text="SALARIO">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtFldSal" />
+         </children>
+      </VBox>
+      <Pane layoutX="68.0" layoutY="202.0" prefHeight="200.0" prefWidth="298.0">
+         <children>
+            <Button fx:id="btnModificar" layoutX="32.0" layoutY="80.0" mnemonicParsing="false" onAction="#Modificar" text="Modificar" />
+            <Button fx:id="btnCancelar" layoutX="212.0" layoutY="80.0" mnemonicParsing="false" onAction="#Cancelar" text="Cancelar" />
+         </children>
+      </Pane>
+      <Label layoutX="16.0" layoutY="25.0" text="Id" />
+   </children>
+</AnchorPane>
